@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <h3><%= title %></h3>
+    <p><%= content %></p>
+    <div>
+      <p>メモ内容：<%= memoData.text %></p>
+      <form action="/memo/delete" method="post">
+        <input type="hidden" name="id" value="<%= memoData.id %>">
+        <p><input type="submit" value="削除"></p>
+      </form>
+    </div>
+  </body>
+
+</html>

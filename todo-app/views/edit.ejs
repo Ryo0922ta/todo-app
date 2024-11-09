@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h3><%= title %></h3>
+    <p><%= content %></p>
+    <div>
+      <form action="/memo/add" method="post">
+        <p>メモ内容：<input type="text" name="text"></p>  
+        <input type="submit" value="追加">
+      </form>
+    </div>
+  </body>
+
+</html>
